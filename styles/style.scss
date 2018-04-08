@@ -1,3 +1,23 @@
 body {
     background-color: #eee;
+    font-family: Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,SF Pro SC,SF Pro Text,SF Pro Icons,PingFang SC,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+}
+
+hr {
+    border: 0;
+    background-color: darkgray;
+    height: 1px;
+}
+
+#page {
+    width: 1024px;
+    margin: 10px auto;
+    padding: 20px;
+    min-height: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 5px rgba(10,206,231,.1);
 }
