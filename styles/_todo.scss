@@ -1,0 +1,55 @@
+#todo-list {
+  margin: 20px;
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: 200;
+
+  .title {
+    text-align: center;
+  }
+
+  input, button {
+      font-size: 28px;
+      font-weight: 200;
+      border: 1px solid #bbb;
+      outline: none;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: #eaeaea;
+    font-size: .8em;
+  }
+
+  input {
+    padding: 5px 10px;
+  }
+
+  .creator {
+    display: flex;
+    input {
+      flex-grow: 1;
+      border-right: 0;
+    }
+
+  }
+
+  .entries {
+    margin-top: 20px;
+    .entry {
+      padding: 8px 10px;
+      border-bottom: 1px solid #eaeaea;
+      display: flex;
+      span {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .stats {
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+  }
+}

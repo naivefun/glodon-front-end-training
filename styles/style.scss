@@ -15,9 +15,11 @@ hr {
 
 #page {
     width: 1024px;
-    margin: 10px auto;
+    margin: 30px auto;
     padding: 20px;
     min-height: 500px;
     background-color: #fff;
     box-shadow: 0 0 10px 5px rgba(10,206,231,.1);
 }
+
+@import 'todo';
