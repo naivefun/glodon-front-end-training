@@ -13,5 +13,9 @@ a super simple typescript starter for landing page
 - 安装 git: `scoop install git nodejs --global`
 - 安装 windows-build-tools: 以 admin 运行 cmd, 运行 `npm install --global --production windows-build-tools`
 
+# 设置 npm 中国镜像
+For chinese users only:
+`npm install -g mirror-config-china --registry=http://registry.npm.taobao.org`
+
 # Get Started
 完整上面需要的组件安装以后, 运行 `npm install`, 然后 `npm start`
