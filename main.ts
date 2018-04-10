@@ -1,9 +1,35 @@
+import { setInterval } from 'timers';
 import * as $ from 'jquery';
 
 $('h1').css('color', 'red');
 
-(async () => {
-  const response = await fetch('http://localhost:3003');
-  const text = await response.text();
-  console.log(text);
-})();
+interface HttpService {
+  getServerTime(): Promise<number>;
+}
+
+class MockHttpService implements HttpService {
+  getServerTime(): Promise<number> {
+    const time = Date.now();
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(time + 2000);
+      }, 1000);
+    });
+  }
+}
+
+const httpService: HttpService = new MockHttpService();
+setInterval(async () => {
+  const serverTime = await httpService.getServerTime();
+  const localTime = Date.now();
+
+  const localTimeLabel = document.getElementById('local-time');
+  const serverTimeLabel = document.getElementById('server-time');
+
+  const localTimeText = String(new Date(localTime).toLocaleTimeString());
+  const serverTimeText = new Date(serverTime).toLocaleTimeString() + '';
+
+  localTimeLabel.innerText = String(localTimeText);
+  serverTimeLabel.innerText = String(serverTimeText);
+
+}, 1000);

@@ -7,6 +7,21 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-size: 30px;
+        }
+
+        .title {
+            font-weight: bold;
+            width: 350px;
+            display: inline-block;
+        }
+
+        span {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,7 +29,14 @@
         <h1>HTML/CSS Playground</h1>
         <hr/>
         <!-- Start -->
-        <a href="https://zl.glodon.com" target="163">广联达筑联平台</a>
+        <div>
+            <span class="title">Local Time:</span>
+            <span id="local-time">...</span>
+        </div>
+        <div>
+            <span class="title">Server Time:</span>
+            <span id="server-time">...</span>
+        </div>
         <!-- End -->
     </div>
 </body>
