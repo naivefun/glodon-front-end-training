@@ -31,11 +31,11 @@ module.exports = {
                 ],
                 exclude: [/(node_modules)/]
             },
-            {
-                test: /\.html$/,
-                use: 'raw-loader',
-                exclude: [root('./index.html')]
-            },
+            // {
+            //     test: /\.html$/,
+            //     use: 'raw-loader',
+            //     exclude: [root('./index.html')]
+            // },
             {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract([
