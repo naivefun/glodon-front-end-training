@@ -26,10 +26,11 @@ setInterval(async () => {
   const localTimeLabel = document.getElementById('local-time');
   const serverTimeLabel = document.getElementById('server-time');
 
-  const localTimeText = String(new Date(localTime).toLocaleTimeString());
-  const serverTimeText = new Date(serverTime).toLocaleTimeString() + '';
+  const localTimeText = new Date(localTime).toLocaleTimeString();
+  const serverTimeText = new Date(serverTime).toLocaleTimeString();
 
   localTimeLabel.innerText = String(localTimeText);
   serverTimeLabel.innerText = String(serverTimeText);
 
 }, 1000);
+
