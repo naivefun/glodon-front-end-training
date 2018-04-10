@@ -29,8 +29,8 @@ setInterval(async () => {
   const localTimeText = new Date(localTime).toLocaleTimeString();
   const serverTimeText = new Date(serverTime).toLocaleTimeString();
 
-  localTimeLabel.innerText = String(localTimeText);
-  serverTimeLabel.innerText = String(serverTimeText);
+  localTimeLabel.innerText = localTimeText;
+  serverTimeLabel.innerText = serverTimeText;
 
 }, 1000);
 
